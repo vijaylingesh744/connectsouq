@@ -1,0 +1,164 @@
+.line-tag {
+    position: absolute;
+    border-bottom: 4px solid #2D2B70;
+    width: 230px;
+    transform: rotate(0deg);
+    margin-top: 20px;
+    left: -195px;
+    z-index: 0;
+}
+
+.step-item:first-child .line-tag {
+    width: 0px;
+    transform: rotate(90deg);
+}
+
+.step-item:nth-child(2) .line-tag {
+    left: -15px
+}
+
+/* .step-item:last-child .line-tag{
+    position: absolute;
+    border-bottom: 1px solid #2D2B70;
+    width: 0px;
+    transform: rotate(90deg);
+    margin-top: 20px;
+    left: -95px;
+    z-index: -1;
+} */
+
+.step-item {
+    position: relative;
+}
+
+.step-number {
+    background-color: grey;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    z-index: 1;
+}
+
+.step-number.active {
+    background-color: #8A40E9;
+}
+
+.rbc-today {
+    background-color: white;
+}
+
+.rbc-now button {
+    color: white;
+    background: #8A40E9;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 5%;
+}
+
+.rbc-off-range-bg {
+    background: #e6e6e6 !important;
+}
+
+
+
+
+
+.event-card{
+    background-color: white;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.event-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 1px solid #e0e0e0; */
+}
+
+.time-container {
+    width: 60px;
+    min-width: 75px;
+    border-right: 2px solid #4535C1;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.details-container {
+    flex-grow: 1;
+}
+
+.action-container {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.time-main {
+    font-weight: 500;
+    font-size: 12px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.time-secondary {
+    font-size: 10px;
+    color: #ccc;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.event-title {
+    color: #4535C1;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    padding: 0px;
+}
+
+.event-description {
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-family: Noto Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16.34px;
+    letter-spacing: 0.05em;
+    color: black;
+    text-transform: capitalize;
+}
+
+.event-location {
+    font-size: 10px;
+    color: #aaa;
+}
+
+.action-container i {
+    font-size: 12px;
+    color: black;
+    font-weight: 800;
+}
+
+.project-table{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.project-table .table thead th {
+    border: none;
+}
+
+.project-table .table> :not(caption)>*>* {
+    padding: 10px;
+    color: #4535C1;
+}

@@ -1,0 +1,54 @@
+.chat-nav{
+    box-shadow: 3px -3px 0px 0px #cb2121;
+    /* margin-bottom: 5px; */
+}
+.chat-bg{
+    background-color: #eaebe2 !important;
+    box-shadow: 0px 0px 5px gray;
+  
+}
+.input-sech{
+    background-color: #e9ecf0 !important;
+    padding: 10px !important;
+    border-radius: 40px;
+}
+.gname:focus{
+    outline:none
+}
+.gname{
+    border: none;
+  border-bottom: 0.5px solid grey;
+}
+.w-0 {
+    width: 0;
+    display:none !important;
+}
+.chatwidth{
+    transition: width 1s ease;
+}
+.aggrementinput{
+    border-bottom: 0.5px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: var(--content1);
+}
+
+/* Style's From Malar Mannan S */
+.pro-card-shadow {
+    box-shadow: 0px 0px 1px 1px #0000001A !important;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+.rounded-primary {
+    border: 2px solid;
+    border-color: #4535C1;
+    border-radius: 50% !important;
+}
+
+.rounded-white {
+    border: 2px solid;
+    border-color: #FFFFFF;
+    border-radius: 50% !important;
+}
