@@ -24,7 +24,7 @@ pipeline {
                         sh 'npm install firebase@latest --force'
 
                         // Build the frontend application (React)
-                        sh 'CI=false npm run build'
+                        sh 'CI=false npm run build --force'
 
                        /* def user = "root" // Change this to your target user
                         def commands = 'sudo su '
