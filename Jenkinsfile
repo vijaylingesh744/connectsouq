@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {            
                     // Change directory to frontend
-                    dir('frontend') {
+                    dir('connect-souq-client') {
                         // Install Firebase and force install dependencies
                         sh 'npm install firebase@latest --force'
 
@@ -47,7 +47,7 @@ pipeline {
             steps {
                 script {
                     // Change directory to the backend directory
-                    dir('backend/backend') {
+                    dir('connect-souq-api/backend') {
                         // Install backend dependencies with --force
                         sh 'npm install --force'
 
