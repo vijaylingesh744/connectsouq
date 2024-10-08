@@ -1,0 +1,37 @@
+pipeline {
+    agent any
+   
+    environment{
+        SCANNER_HOME=tool 'sonar-scanner'
+    }    
+    stages {
+        stage('git checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/vijaylingesh744/connectsouq'
+            }
+        }
+        
+        stage('OWASP SCAN') {
+            steps {
+               dependencyCheck additionalArguments: '-s /var/lib/jenkins/workspace/ci-cd pipeline', odcInstallation: 'DC'
+            }
+        }
+        
+        stage('TRIVY FS SCAN') {
+            steps {
+               sh 'trivy fs .'
+            }
+        }
+         stage('SONARQUBE ANALYSIS') {
+            steps {
+               withSonarQubeEnv('sonar') {
+                   sh '''$SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=connectsouq -Dsonar.projectKey=connectsouq'''
+                   
+               }
+            }
+        }
+        
+        
+        
+    }
+}
