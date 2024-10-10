@@ -10,7 +10,7 @@ pipeline {
         // Step 1: Clone the repository
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/vijaylingesh744/backend.git', branch: 'main'
+                git url: 'https://github.com/vijaylingesh744/connectsouq', branch: 'main'
             }
         }
 
